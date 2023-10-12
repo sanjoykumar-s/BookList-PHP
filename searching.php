@@ -1,3 +1,12 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
 <?php
 $json = file_get_contents('books.json');
 $books = json_decode($json, true);
@@ -10,7 +19,6 @@ foreach ($books as $book) {
     }
 }
 ?>
-<a href="form.php">Add Book</a>
 <form action="searching.php" method="get">
     <input type="text" name="query" value="<?php echo $_GET['query'] ?>" id="query">
     <button type="submit">Search</button>
@@ -49,3 +57,6 @@ foreach ($books as $book) {
     ?>
 
 </table>
+<a href="addForm.php" class="add-book-link">Add Book</a>
+</body>
+</html>
