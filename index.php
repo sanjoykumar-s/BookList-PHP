@@ -14,7 +14,7 @@
     ?>
     <h2 align="center">Book List</h2>
     <form action="searching.php" method="get">
-        <input type="text" name="query" id = "query">
+        <input type="text" placeholder="Search Keyword" name="query" id = "query">
         <button type="submit">Search</button>
     </form>
     <table border="1" width="900">
@@ -41,7 +41,7 @@
                     <a href="editForm.php?index=<?php echo $index ?>">Edit</a>
                     <form action="deletion.php" method="post">
                         <input type="hidden" name="index" value="<?php echo $index ?>">
-                        <button type="submit">Delete</button>
+                        <button type="submit" style="background-color: #ff0000;">Delete</button>
                     </form>
                 </td>
             </tr>

@@ -20,7 +20,7 @@ foreach ($books as $book) {
 }
 ?>
 <form action="searching.php" method="get">
-    <input type="text" name="query" value="<?php echo $_GET['query'] ?>" id="query">
+    <input type="text"  name="query" value="<?php echo $_GET['query'] ?>" id="query">
     <button type="submit">Search</button>
 </form>
 <table border="1" width="900">
@@ -46,7 +46,7 @@ foreach ($books as $book) {
 
                 <form action="deletion.php" method="POST">
                     <input type="hidden" name="index" value="<?php echo $index ?>">
-                    <button type="submit">Delete</button>
+                    <button type="submit" style="background-color: #ff0000;">Delete</button>
                 </form>
             </td>
         </tr>

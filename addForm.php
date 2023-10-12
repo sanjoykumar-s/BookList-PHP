@@ -24,12 +24,12 @@ $book = $books[$index];
             <label for="author">Author :</label>
             <input type="text" name="authorName" placeholder="Type Author name" required>
             <label for="available">Available :</label>
-            <input type="text" name="available" placeholder="Type true/false" required>
+            <input type="text" name="available" placeholder="Enter number of available copy" required>
             <label for="pages">Pages :</label>
             <input type="text" name="pages"  placeholder="Type page number" required>
             <label for="isbn">ISBN :</label>
             <input type="text" name="isbn"  placeholder="Type ISBN" required>
-            <input type="submit" value="Submit">
+            <br><input type="submit" value="Submit">
         </form>
     </div>
 </body>
